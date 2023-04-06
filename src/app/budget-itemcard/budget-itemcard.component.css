@@ -1,0 +1,72 @@
+.root{
+    display: flex;
+    width: 100%;
+    position: relative;
+}
+.root:hover .x-button{
+    transform: scale(1);
+    opacity: 1;
+    
+}
+.x-button{
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    padding: 3px;
+    border-radius: 50%;
+    right: -14px;
+    top: -13px;
+    text-align: center;
+    color: #bd3200;
+    background-color: rgb(22, 28, 41);
+    transition: opacity 0.2s ease-in, transform 0.2s ease-out;
+    transform: scale(0);
+    opacity: 0;
+}
+.x-button:hover{
+    transform: scale(1.2) !important;
+    cursor: pointer;
+}
+.budget-item{
+    display: flex;
+    width: 100%;
+    background-color: #f7f4f4;
+    padding: 6px;
+    /* margin-bottom: 15px; */
+    border-radius: 5px;
+    cursor: pointer;
+    transition:background-color 0.2s ease-out ;
+}
+.budget-item:hover{
+    background-color: #f0ecec;
+}
+.describtion{
+    flex-grow: 1;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+.amount{
+    padding: 5px;
+    border-radius: 5px;
+    height: 35px;
+}
+.income{
+    color:#00cc85dc ;
+}
+.expences{
+    color: #bd3200;
+}
+.incomeBg{
+    background-color: #00cc8536;
+}
+.expencesBg{
+    background-color: #bd32002d;
+}
+
+@media (max-width: 545px){
+    .x-button{
+        transform: scale(1);
+        opacity: 1;
+    }
+}

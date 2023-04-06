@@ -1,1 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+*{
+    box-sizing: border-box;
+}
+html, body { height: 100%; }
+body { 
+    margin: 0;
+    font-family:serif; 
+    /* background: linear-gradient(75deg, rgb(214 180 247 / 57%), rgb(173 203 231 / 50%)); */
+}
+
+.mat-mdc-dialog-container .mdc-dialog__surface {
+    padding: 17px !important;
+}

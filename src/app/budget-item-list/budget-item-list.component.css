@@ -1,0 +1,42 @@
+.budget-list{
+    margin-top: 50px;
+}
+.budget-list-container{
+    width: 54%;
+    margin: auto;
+}
+h1{
+    font-size: 22px;
+    font-weight: 900px;
+    text-transform: uppercase;
+}
+
+.income, .expences{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 0;
+    flex-grow: 1;
+    text-transform: capitalize;
+}
+.income h1{
+    color: #00cc85dc;
+}
+.expences h1{
+    color: #bd3200;
+}
+
+
+@media (max-width: 545px) {
+    .budget-list-container{
+        width: 80%;
+    }
+    h1{
+        font-size: 19px;
+    }
+}
+@media (min-width: 767px) and (max-width:1013px) {
+    .budget-list-container{
+        width: 70%;
+        margin: auto;
+    }
+}

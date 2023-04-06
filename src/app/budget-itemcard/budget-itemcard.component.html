@@ -1,0 +1,14 @@
+<div class="root">
+    <div class="budget-item" (click)="onCardClick()" [ngClass]="{'income': item.amount >=0, 'expences': item.amount <0}" >
+        <div class="describtion">
+            <p>{{item.description}}</p>
+        </div>
+        <div class="amount" 
+        [ngClass]="{'incomeBg': item.amount >=0, 'expencesBg': item.amount <0}">
+            <p>{{item.amount |currency: 'EGP'}}</p>
+        </div>
+    </div>
+    <div class="x-button" (click)=" onXButton()">
+        <i class="fa-solid fa-xmark"></i>
+    </div>
+</div>

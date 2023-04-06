@@ -1,0 +1,21 @@
+.form-control:focus{
+    border-color: rgb(159, 104, 235) !important;
+    box-shadow: none !important;
+}
+.form-control{
+    background-color: #f7f4f4;
+}
+.btn-dark{
+    background-color:rgb(159, 104, 235) !important ;
+    color: white !important;
+    border-color:rgb(159, 104, 235) !important ;
+    outline: none !important;
+    width: 100%;
+}
+.btn-dark:hover{
+    background-color:white !important ;
+    color: rgb(159, 104, 235) !important;
+    border-color: rgb(159, 104, 235) !important;
+}
+
+
